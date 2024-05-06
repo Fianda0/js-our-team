@@ -11,5 +11,6 @@ for (let i = 0; i < persone.length; i++) {
     const element = persone[i];
     for (let key in persone[i]) {
         console.log(key, persone[i][key])
+        document.getElementById('membri').innerHTML += `<div> ${key} ${persone[i][key]}</div>`
     }
 }
