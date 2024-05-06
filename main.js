@@ -5,4 +5,11 @@ let persone = [
     { nome: 'Angela Lopez', ruolo: 'Social Media Manager', immagine: 'angela-lopez-social-media-manager.jpg' },
     { nome: 'Scott Estrada', ruolo: 'Developer', immagine: 'scott-estrada-developer.jpg' },
     { nome: 'Babarra Ramos', ruolo: 'Graphic Designer', immagine: 'barbara-ramos-graphic-designer.jpg' },
-]
+];
+
+for (let i = 0; i < persone.length; i++) {
+    const element = persone[i];
+    for (let key in persone[i]) {
+        console.log(key, persone[i][key])
+    }
+}
